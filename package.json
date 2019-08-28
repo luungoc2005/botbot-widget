@@ -1,0 +1,20 @@
+{
+  "name": "botbot-widget",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/plugin-transform-react-jsx": "^7.3.0",
+    "htm": "^2.2.1",
+    "parcel": "^1.12.3",
+    "preact": "^8.5.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5"
+  }
+}
