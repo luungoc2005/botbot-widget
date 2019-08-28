@@ -2,7 +2,7 @@
 
 1. Basic Usage
 
-```
+```javascript
 <html>
 
 <body>
@@ -22,7 +22,7 @@ Where `botbot-widget.js` is the built JS file and URL of your choosing
 2. Customizing the Welcome Message
 
 Inside 
-```
+```javascript
   BotBot.render({
     url: "https://webchat.botbot.ai/"
   });
@@ -30,7 +30,7 @@ Inside
 
 To **disable** the welcome message:
 
-```
+```javascript
   BotBot.render({
     url: "https://webchat.botbot.ai/",
     welcomeMessage: false
@@ -38,7 +38,7 @@ To **disable** the welcome message:
 ```
 
 To **customize** the welcome message:
-```
+```javascript
   BotBot.render({
     url: "https://webchat.botbot.ai/",
     welcomeMessage: {
@@ -52,7 +52,7 @@ To **customize** the welcome message:
 
 3. Customizing the button icon:
 
-```
+```javascript
   BotBot.render({
     url: "https://webchat.botbot.ai/",
     buttonIcon: 'https://dashboard.botbot.ai/assets/d16f4ba438e1cab71d86520c31ea1a29.png'
@@ -60,7 +60,7 @@ To **customize** the welcome message:
 ```
 
 4. Customizing the iframeStyle style:
-```
+```javascript
   BotBot.render({
     url: "https://webchat.botbot.ai/",
     iframeStyle: {
