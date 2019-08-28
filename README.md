@@ -1,6 +1,6 @@
-## Webchat Widget for BotBot
+# Webchat Widget for BotBot
 
-1. Basic Usage
+## 1. Basic Usage
 
 ```javascript
 <html>
@@ -19,7 +19,7 @@
 
 Where `botbot-widget.js` is the built JS file and URL of your choosing
 
-2. Customizing the Welcome Message
+## 2. Customizing the Welcome Message
 
 Inside 
 ```javascript
@@ -50,7 +50,7 @@ To **customize** the welcome message:
   });
 ```
 
-3. Customizing the button icon:
+## 3. Customizing the button icon:
 
 ```javascript
   BotBot.render({
@@ -59,7 +59,7 @@ To **customize** the welcome message:
   });
 ```
 
-4. Customizing the iframeStyle style:
+## 4. Customizing the iframeStyle style:
 ```javascript
   BotBot.render({
     url: "https://webchat.botbot.ai/",
