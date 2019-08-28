@@ -15,7 +15,7 @@ export class App extends Component {
 
   componentDidMount() {
     const { welcomeMessage } = this.props;
-    const { delay } = welcomeMessage || {}
+    const { delay } = {...defaultWelcomeMessageProps, ...(welcomeMessage || {})}
     this.notifyBubbleTimeout = setTimeout(() => {
       this.setState({ showBubble: true })
     }, delay || 2000);
@@ -47,16 +47,17 @@ export class App extends Component {
       iframeStyle,
     } = this.props;
     
+    const showWelcomeMessage = Boolean(welcomeMessage)
     const { title, message } = {...defaultWelcomeMessageProps, ...(welcomeMessage || {})};
 
     return <Fragment>
-      <div 
+      {showWelcomeMessage && <div 
         class={`notify-bubble ${showBubble && 'show'}`} 
         onclick={this.handleToggleChatWidget}
       >
         <span>{title}</span>
         <p>{message}</p>
-      </div>
+      </div>}
       <div class={`chat-content ${showWidget && 'show'}`} aria-expanded={showWidget}>
         {iframeMounted && <iframe 
           id='botbot-iframe'
