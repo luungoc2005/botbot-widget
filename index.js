@@ -61,6 +61,9 @@ window.BotBot = {
       right: 0;
       box-shadow: 0 4px 5px #ddd;
       background: white;
+      height: 520px;
+      width: 90vw;
+      max-width: 500px;
     }
     .botbot-chat-widget .notify-bubble {
       opacity: 0;
@@ -91,7 +94,21 @@ window.BotBot = {
     }
     .botbot-chat-widget .notify-bubble p {
       margin-top: 10px;
-    }`
+    }
+    @media only screen and (max-width: 600px) {
+      .botbot-chat-widget .chat-content {
+          position: fixed;
+          top: 4px;
+          right: 4px;
+          bottom: 96px;
+          width: 98vw;
+          max-width: initial;
+          height: initial;
+          border-radius: 0px;
+          z-index: 200;
+      }
+    }
+    `
     
     if (!rendered) {
       const styleTag = document.createElement('style');

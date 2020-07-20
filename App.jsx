@@ -64,10 +64,9 @@ export class App extends Component {
           src={url}
           allowfullscreen={true}
           style={{
-            maxWidth: '500px',
-            width: '90vw',
-            height: '520px',
             border: 0,
+            width: '100%',
+            height: '100%',
             ...iframeStyle,
           }}
         />}
