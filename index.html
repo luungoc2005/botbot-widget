@@ -1,10 +1,15 @@
 <html>
-<body>
+<body style="background-color: lightblue;">
   <script src="./index.js"></script>
   <script>
     BotBot.render({
-      url: 'https://webchat.botbot.ai/Thermo%20Fisher%20V2',
-      welcomeMessage: false
+      url: 'http://localhost:8080/sacombank-external',
+      welcomeMessage: {
+        title: 'BotBot.AI',
+        message: 'Xin chào! Mình là Sari - trợ lý ảo <strong style="color: #0058A0;">Sacombank</strong>. Mình có thể giúp gì cho bạn',
+        delay: 500,
+        speed: 180,
+      },
     })
   </script>
 </body>
