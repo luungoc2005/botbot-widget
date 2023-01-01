@@ -13,7 +13,7 @@
   "dependencies": {
     "@babel/plugin-transform-react-jsx": "^7.3.0",
     "htm": "^2.2.1",
-    "parcel": "^1.12.3",
+    "parcel": "^2.8.2",
     "preact": "^8.5.2"
   },
   "devDependencies": {
